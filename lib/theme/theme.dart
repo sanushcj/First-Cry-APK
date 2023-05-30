@@ -8,4 +8,5 @@ class Pallete {
   static const Color amoledBlack = Color.fromRGBO(0, 0, 0, 1);
   static const Color orange = Color.fromRGBO(226, 88, 29, 1);
   static const Color lightyellow = Color.fromRGBO(244, 228, 10, 1);
+  static const Color specialcream = Color.fromRGBO(242, 143, 107, 1);
 }
