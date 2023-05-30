@@ -1,6 +1,7 @@
 import 'package:first_cry_ui/home/widgets/appbar.dart';
 import 'package:first_cry_ui/home/widgets/lastpage.dart';
 import 'package:first_cry_ui/home/widgets/squarewidget.dart';
+import 'package:first_cry_ui/product/productpage.dart';
 import 'package:first_cry_ui/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'widgets/caroasal.dart';
@@ -69,7 +70,7 @@ class _HomePageState extends State<HomePage> {
                   ],
                 ),
               ),
-              const PremiumBotiqueContainer(),
+              GestureDetector(onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => const ProductUI(),)), child: const PremiumBotiqueContainer()),
               Container(
                 width: double.infinity,
                 height: MediaQuery.of(context).size.height / 2,
@@ -78,7 +79,7 @@ class _HomePageState extends State<HomePage> {
                         fit: BoxFit.cover,
                         image: AssetImage('lib/assets/deal1.png'))),
               ),
-              const LastPageHome()
+              const LastPageHome(),
             ],
           ),
         ),

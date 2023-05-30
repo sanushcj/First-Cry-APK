@@ -14,7 +14,8 @@ class LastPageHome extends StatelessWidget {
       height: MediaQuery.of(context).size.height / 1.5,
       width: double.infinity,
       decoration: const BoxDecoration(color: Pallete.specialcream),
-      child: Column(children: [
+      child:
+          Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
         Container(
           alignment: Alignment.topCenter,
           decoration: const BoxDecoration(
@@ -38,9 +39,11 @@ class LastPageHome extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20),
                     ),
                   ),
-              separatorBuilder: (context, index) =>
-                  const SizedBox(width: 25),
+              separatorBuilder: (context, index) => const SizedBox(width: 25),
               itemCount: 5),
+        ),
+        const SizedBox(
+          height: 15,
         )
       ]),
     );

@@ -1,3 +1,4 @@
+import 'package:first_cry_ui/product/productpage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
@@ -18,9 +19,7 @@ class _MyBottomNavBarState extends State<MyBottomNavBar> {
   int _selectedIndex = 0;
   final List<Widget> _listofPages = <Widget>[
     const HomePage(),
-    const Text(
-      'Likes',
-    ),
+    const ProductUI(),
     const Text(
       'Search',
     ),
