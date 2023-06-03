@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 
-import '../../theme/theme.dart';
 
 class PriceWidget extends StatelessWidget {
   const PriceWidget({
